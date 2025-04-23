@@ -1,10 +1,11 @@
-# # GetApiV2CatalogIndex200Response
+# # GetApiV2CatalogIndex200ResponseCustomer
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**catalog_id** | **string** |  | [optional]
-**customer** | [**\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer**](GetApiV2CatalogIndex200ResponseCustomer.md) |  | [optional]
+**country** | **string** |  | [optional]
+**last_provider_id** | **int** |  | [optional]
+**life_time_value** | **int** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

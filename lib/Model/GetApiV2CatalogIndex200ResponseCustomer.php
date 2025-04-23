@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV2CatalogIndex200Response
+ * GetApiV2CatalogIndex200ResponseCustomer
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \OpenAPI\Client\ObjectSerializer;
 
 /**
- * GetApiV2CatalogIndex200Response Class Doc Comment
+ * GetApiV2CatalogIndex200ResponseCustomer Class Doc Comment
  *
  * @category Class
  * @package  OpenAPI\Client
@@ -40,7 +40,7 @@ use \OpenAPI\Client\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetApiV2CatalogIndex200ResponseCustomer implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response';
+    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_customer';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +57,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'catalog_id' => 'string',
-        'customer' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer'
+        'country' => 'string',
+        'last_provider_id' => 'int',
+        'life_time_value' => 'int'
     ];
 
     /**
@@ -69,8 +70,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'catalog_id' => null,
-        'customer' => null
+        'country' => null,
+        'last_provider_id' => null,
+        'life_time_value' => null
     ];
 
     /**
@@ -79,8 +81,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'catalog_id' => false,
-        'customer' => false
+        'country' => false,
+        'last_provider_id' => false,
+        'life_time_value' => false
     ];
 
     /**
@@ -169,8 +172,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $attributeMap = [
-        'catalog_id' => 'catalogId',
-        'customer' => 'customer'
+        'country' => 'country',
+        'last_provider_id' => 'lastProviderId',
+        'life_time_value' => 'lifeTimeValue'
     ];
 
     /**
@@ -179,8 +183,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'catalog_id' => 'setCatalogId',
-        'customer' => 'setCustomer'
+        'country' => 'setCountry',
+        'last_provider_id' => 'setLastProviderId',
+        'life_time_value' => 'setLifeTimeValue'
     ];
 
     /**
@@ -189,8 +194,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'catalog_id' => 'getCatalogId',
-        'customer' => 'getCustomer'
+        'country' => 'getCountry',
+        'last_provider_id' => 'getLastProviderId',
+        'life_time_value' => 'getLifeTimeValue'
     ];
 
     /**
@@ -250,8 +256,9 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('catalog_id', $data ?? [], null);
-        $this->setIfExists('customer', $data ?? [], null);
+        $this->setIfExists('country', $data ?? [], null);
+        $this->setIfExists('last_provider_id', $data ?? [], null);
+        $this->setIfExists('life_time_value', $data ?? [], null);
     }
 
     /**
@@ -297,55 +304,82 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
 
 
     /**
-     * Gets catalog_id
+     * Gets country
      *
      * @return string|null
      */
-    public function getCatalogId()
+    public function getCountry()
     {
-        return $this->container['catalog_id'];
+        return $this->container['country'];
     }
 
     /**
-     * Sets catalog_id
+     * Sets country
      *
-     * @param string|null $catalog_id catalog_id
+     * @param string|null $country country
      *
      * @return self
      */
-    public function setCatalogId($catalog_id)
+    public function setCountry($country)
     {
-        if (is_null($catalog_id)) {
-            throw new \InvalidArgumentException('non-nullable catalog_id cannot be null');
+        if (is_null($country)) {
+            throw new \InvalidArgumentException('non-nullable country cannot be null');
         }
-        $this->container['catalog_id'] = $catalog_id;
+        $this->container['country'] = $country;
 
         return $this;
     }
 
     /**
-     * Gets customer
+     * Gets last_provider_id
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null
+     * @return int|null
      */
-    public function getCustomer()
+    public function getLastProviderId()
     {
-        return $this->container['customer'];
+        return $this->container['last_provider_id'];
     }
 
     /**
-     * Sets customer
+     * Sets last_provider_id
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null $customer customer
+     * @param int|null $last_provider_id last_provider_id
      *
      * @return self
      */
-    public function setCustomer($customer)
+    public function setLastProviderId($last_provider_id)
     {
-        if (is_null($customer)) {
-            throw new \InvalidArgumentException('non-nullable customer cannot be null');
+        if (is_null($last_provider_id)) {
+            throw new \InvalidArgumentException('non-nullable last_provider_id cannot be null');
         }
-        $this->container['customer'] = $customer;
+        $this->container['last_provider_id'] = $last_provider_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets life_time_value
+     *
+     * @return int|null
+     */
+    public function getLifeTimeValue()
+    {
+        return $this->container['life_time_value'];
+    }
+
+    /**
+     * Sets life_time_value
+     *
+     * @param int|null $life_time_value life_time_value
+     *
+     * @return self
+     */
+    public function setLifeTimeValue($life_time_value)
+    {
+        if (is_null($life_time_value)) {
+            throw new \InvalidArgumentException('non-nullable life_time_value cannot be null');
+        }
+        $this->container['life_time_value'] = $life_time_value;
 
         return $this;
     }

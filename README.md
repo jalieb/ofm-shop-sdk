@@ -85,6 +85,7 @@ Class | Method | HTTP request | Description
 ## Models
 
 - [GetApiV2CatalogIndex200Response](docs/Model/GetApiV2CatalogIndex200Response.md)
+- [GetApiV2CatalogIndex200ResponseCustomer](docs/Model/GetApiV2CatalogIndex200ResponseCustomer.md)
 
 ## Authorization
 
