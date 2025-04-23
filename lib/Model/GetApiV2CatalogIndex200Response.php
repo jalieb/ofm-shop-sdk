@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace StillfrontPaymentApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \StillfrontPaymentApi\ObjectSerializer;
 
 /**
  * GetApiV2CatalogIndex200Response Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'catalog_id' => 'string',
-        'customer' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer',
-        'product_groups' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]'
+        'customer' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseCustomer',
+        'product_groups' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets customer
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseCustomer|null
      */
     public function getCustomer()
     {
@@ -343,7 +343,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets customer
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null $customer customer
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseCustomer|null $customer customer
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets product_groups
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null
      */
     public function getProductGroups()
     {
@@ -370,7 +370,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets product_groups
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null $product_groups product_groups
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null $product_groups product_groups
      *
      * @return self
      */

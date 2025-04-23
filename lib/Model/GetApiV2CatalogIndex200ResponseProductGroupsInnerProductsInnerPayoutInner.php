@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace StillfrontPaymentApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \StillfrontPaymentApi\ObjectSerializer;
 
 /**
  * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

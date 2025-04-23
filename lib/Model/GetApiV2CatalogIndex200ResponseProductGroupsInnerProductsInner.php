@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace StillfrontPaymentApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \StillfrontPaymentApi\ObjectSerializer;
 
 /**
  * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,9 +58,9 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'price' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice',
+        'price' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice',
         'providers' => 'string[]',
-        'payout' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]',
+        'payout' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]',
         'duration' => 'string'
     ];
 
@@ -347,7 +347,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
     /**
      * Gets price
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null
      */
     public function getPrice()
     {
@@ -357,7 +357,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
     /**
      * Sets price
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null $price price
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null $price price
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
     /**
      * Gets payout
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null
      */
     public function getPayout()
     {
@@ -411,7 +411,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
     /**
      * Sets payout
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null $payout payout
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null $payout payout
      *
      * @return self
      */

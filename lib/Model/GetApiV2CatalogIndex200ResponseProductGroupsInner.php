@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Model;
+namespace StillfrontPaymentApi\Model;
 
 use \ArrayAccess;
-use \OpenAPI\Client\ObjectSerializer;
+use \StillfrontPaymentApi\ObjectSerializer;
 
 /**
  * GetApiV2CatalogIndex200ResponseProductGroupsInner Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     protected static $openAPITypes = [
         'id' => 'string',
         'category' => 'string',
-        'products' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]',
-        'providers' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]'
+        'products' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]',
+        'providers' => '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     /**
      * Gets products
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null
      */
     public function getProducts()
     {
@@ -377,7 +377,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     /**
      * Sets products
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null $products products
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null $products products
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     /**
      * Gets providers
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null
      */
     public function getProviders()
     {
@@ -404,7 +404,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     /**
      * Sets providers
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null $providers providers
+     * @param \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null $providers providers
      *
      * @return self
      */

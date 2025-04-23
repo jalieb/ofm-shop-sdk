@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace OpenAPI\Client\Api;
+namespace StillfrontPaymentApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use OpenAPI\Client\ApiException;
-use OpenAPI\Client\Configuration;
-use OpenAPI\Client\HeaderSelector;
-use OpenAPI\Client\ObjectSerializer;
+use StillfrontPaymentApi\ApiException;
+use StillfrontPaymentApi\Configuration;
+use StillfrontPaymentApi\HeaderSelector;
+use StillfrontPaymentApi\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  OpenAPI\Client
+ * @package  StillfrontPaymentApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,9 +132,9 @@ class DefaultApi
      * @param  string $remote_address remote_address (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV2CatalogIndex'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \StillfrontPaymentApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200Response
+     * @return \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response
      */
     public function getApiV2CatalogIndex($game_id, $network_id, $instance_id, $player_id, $remote_address, string $contentType = self::contentTypes['getApiV2CatalogIndex'][0])
     {
@@ -152,9 +152,9 @@ class DefaultApi
      * @param  string $remote_address (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV2CatalogIndex'] to see the possible values for this operation
      *
-     * @throws \OpenAPI\Client\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \StillfrontPaymentApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \OpenAPI\Client\Model\GetApiV2CatalogIndex200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV2CatalogIndexWithHttpInfo($game_id, $network_id, $instance_id, $player_id, $remote_address, string $contentType = self::contentTypes['getApiV2CatalogIndex'][0])
     {
@@ -185,11 +185,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response' === '\SplFileObject') {
+                    if ('\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response' !== 'string') {
+                        if ('\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -207,7 +207,7 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response', []),
+                        ObjectSerializer::deserialize($content, '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -226,7 +226,7 @@ class DefaultApi
                 );
             }
 
-            $returnType = '\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response';
+            $returnType = '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -259,7 +259,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response',
+                        '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -307,7 +307,7 @@ class DefaultApi
      */
     public function getApiV2CatalogIndexAsyncWithHttpInfo($game_id, $network_id, $instance_id, $player_id, $remote_address, string $contentType = self::contentTypes['getApiV2CatalogIndex'][0])
     {
-        $returnType = '\OpenAPI\Client\Model\GetApiV2CatalogIndex200Response';
+        $returnType = '\StillfrontPaymentApi\Model\GetApiV2CatalogIndex200Response';
         $request = $this->getApiV2CatalogIndexRequest($game_id, $network_id, $instance_id, $player_id, $remote_address, $contentType);
 
         return $this->client
