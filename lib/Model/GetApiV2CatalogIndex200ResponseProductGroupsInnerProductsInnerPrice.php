@@ -58,7 +58,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
       */
     protected static $openAPITypes = [
         'amount' => 'int',
-        'currency' => 'string'
+        'currency' => 'string',
+        'duration' => 'string'
     ];
 
     /**
@@ -70,7 +71,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
       */
     protected static $openAPIFormats = [
         'amount' => null,
-        'currency' => null
+        'currency' => null,
+        'duration' => null
     ];
 
     /**
@@ -80,7 +82,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
       */
     protected static array $openAPINullables = [
         'amount' => false,
-        'currency' => false
+        'currency' => false,
+        'duration' => false
     ];
 
     /**
@@ -170,7 +173,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
      */
     protected static $attributeMap = [
         'amount' => 'amount',
-        'currency' => 'currency'
+        'currency' => 'currency',
+        'duration' => 'duration'
     ];
 
     /**
@@ -180,7 +184,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
      */
     protected static $setters = [
         'amount' => 'setAmount',
-        'currency' => 'setCurrency'
+        'currency' => 'setCurrency',
+        'duration' => 'setDuration'
     ];
 
     /**
@@ -190,7 +195,8 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
      */
     protected static $getters = [
         'amount' => 'getAmount',
-        'currency' => 'getCurrency'
+        'currency' => 'getCurrency',
+        'duration' => 'getDuration'
     ];
 
     /**
@@ -252,6 +258,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
     {
         $this->setIfExists('amount', $data ?? [], null);
         $this->setIfExists('currency', $data ?? [], null);
+        $this->setIfExists('duration', $data ?? [], null);
     }
 
     /**
@@ -346,6 +353,33 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice implem
             throw new \InvalidArgumentException('non-nullable currency cannot be null');
         }
         $this->container['currency'] = $currency;
+
+        return $this;
+    }
+
+    /**
+     * Gets duration
+     *
+     * @return string|null
+     */
+    public function getDuration()
+    {
+        return $this->container['duration'];
+    }
+
+    /**
+     * Sets duration
+     *
+     * @param string|null $duration duration
+     *
+     * @return self
+     */
+    public function setDuration($duration)
+    {
+        if (is_null($duration)) {
+            throw new \InvalidArgumentException('non-nullable duration cannot be null');
+        }
+        $this->container['duration'] = $duration;
 
         return $this;
     }

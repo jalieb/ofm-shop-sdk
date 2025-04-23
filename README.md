@@ -88,7 +88,9 @@ Class | Method | HTTP request | Description
 - [GetApiV2CatalogIndex200ResponseCustomer](docs/Model/GetApiV2CatalogIndex200ResponseCustomer.md)
 - [GetApiV2CatalogIndex200ResponseProductGroupsInner](docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInner.md)
 - [GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner](docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner.md)
+- [GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner](docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner.md)
 - [GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice](docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice.md)
+- [GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner](docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner.md)
 
 ## Authorization
 

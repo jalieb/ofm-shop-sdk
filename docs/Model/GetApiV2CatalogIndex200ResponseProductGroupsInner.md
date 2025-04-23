@@ -7,5 +7,6 @@ Name | Type | Description | Notes
 **id** | **string** |  | [optional]
 **category** | **string** |  | [optional]
 **products** | [**\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]**](GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner.md) |  | [optional]
+**providers** | [**\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]**](GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

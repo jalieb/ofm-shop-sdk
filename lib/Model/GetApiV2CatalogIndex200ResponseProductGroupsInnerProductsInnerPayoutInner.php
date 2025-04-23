@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV2CatalogIndex200ResponseProductGroupsInner
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \OpenAPI\Client\ObjectSerializer;
 
 /**
- * GetApiV2CatalogIndex200ResponseProductGroupsInner Class Doc Comment
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner Class Doc Comment
  *
  * @category Class
  * @package  OpenAPI\Client
@@ -40,7 +40,7 @@ use \OpenAPI\Client\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_productGroups_inner';
+    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_productGroups_inner_products_inner_payout_inner';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'id' => 'string',
-        'category' => 'string',
-        'products' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]',
-        'providers' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]'
+        'currency_premium' => 'int'
     ];
 
     /**
@@ -71,10 +68,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'id' => null,
-        'category' => null,
-        'products' => null,
-        'providers' => null
+        'currency_premium' => null
     ];
 
     /**
@@ -83,10 +77,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'id' => false,
-        'category' => false,
-        'products' => false,
-        'providers' => false
+        'currency_premium' => false
     ];
 
     /**
@@ -175,10 +166,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      * @var string[]
      */
     protected static $attributeMap = [
-        'id' => 'id',
-        'category' => 'category',
-        'products' => 'products',
-        'providers' => 'providers'
+        'currency_premium' => 'currencyPremium'
     ];
 
     /**
@@ -187,10 +175,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'category' => 'setCategory',
-        'products' => 'setProducts',
-        'providers' => 'setProviders'
+        'currency_premium' => 'setCurrencyPremium'
     ];
 
     /**
@@ -199,10 +184,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'category' => 'getCategory',
-        'products' => 'getProducts',
-        'providers' => 'getProviders'
+        'currency_premium' => 'getCurrencyPremium'
     ];
 
     /**
@@ -262,10 +244,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('category', $data ?? [], null);
-        $this->setIfExists('products', $data ?? [], null);
-        $this->setIfExists('providers', $data ?? [], null);
+        $this->setIfExists('currency_premium', $data ?? [], null);
     }
 
     /**
@@ -311,109 +290,28 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
 
 
     /**
-     * Gets id
+     * Gets currency_premium
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getId()
+    public function getCurrencyPremium()
     {
-        return $this->container['id'];
+        return $this->container['currency_premium'];
     }
 
     /**
-     * Sets id
+     * Sets currency_premium
      *
-     * @param string|null $id id
+     * @param int|null $currency_premium currency_premium
      *
      * @return self
      */
-    public function setId($id)
+    public function setCurrencyPremium($currency_premium)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        if (is_null($currency_premium)) {
+            throw new \InvalidArgumentException('non-nullable currency_premium cannot be null');
         }
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets category
-     *
-     * @return string|null
-     */
-    public function getCategory()
-    {
-        return $this->container['category'];
-    }
-
-    /**
-     * Sets category
-     *
-     * @param string|null $category category
-     *
-     * @return self
-     */
-    public function setCategory($category)
-    {
-        if (is_null($category)) {
-            throw new \InvalidArgumentException('non-nullable category cannot be null');
-        }
-        $this->container['category'] = $category;
-
-        return $this;
-    }
-
-    /**
-     * Gets products
-     *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null
-     */
-    public function getProducts()
-    {
-        return $this->container['products'];
-    }
-
-    /**
-     * Sets products
-     *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null $products products
-     *
-     * @return self
-     */
-    public function setProducts($products)
-    {
-        if (is_null($products)) {
-            throw new \InvalidArgumentException('non-nullable products cannot be null');
-        }
-        $this->container['products'] = $products;
-
-        return $this;
-    }
-
-    /**
-     * Gets providers
-     *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null
-     */
-    public function getProviders()
-    {
-        return $this->container['providers'];
-    }
-
-    /**
-     * Sets providers
-     *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null $providers providers
-     *
-     * @return self
-     */
-    public function setProviders($providers)
-    {
-        if (is_null($providers)) {
-            throw new \InvalidArgumentException('non-nullable providers cannot be null');
-        }
-        $this->container['providers'] = $providers;
+        $this->container['currency_premium'] = $currency_premium;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV2CatalogIndex200ResponseProductGroupsInner
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \OpenAPI\Client\ObjectSerializer;
 
 /**
- * GetApiV2CatalogIndex200ResponseProductGroupsInner Class Doc Comment
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner Class Doc Comment
  *
  * @category Class
  * @package  OpenAPI\Client
@@ -40,7 +40,7 @@ use \OpenAPI\Client\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_productGroups_inner';
+    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_productGroups_inner_providers_inner';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,9 +58,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'category' => 'string',
-        'products' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]',
-        'providers' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]'
+        'position' => 'int'
     ];
 
     /**
@@ -72,9 +70,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       */
     protected static $openAPIFormats = [
         'id' => null,
-        'category' => null,
-        'products' => null,
-        'providers' => null
+        'position' => null
     ];
 
     /**
@@ -84,9 +80,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
       */
     protected static array $openAPINullables = [
         'id' => false,
-        'category' => false,
-        'products' => false,
-        'providers' => false
+        'position' => false
     ];
 
     /**
@@ -176,9 +170,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'category' => 'category',
-        'products' => 'products',
-        'providers' => 'providers'
+        'position' => 'position'
     ];
 
     /**
@@ -188,9 +180,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      */
     protected static $setters = [
         'id' => 'setId',
-        'category' => 'setCategory',
-        'products' => 'setProducts',
-        'providers' => 'setProviders'
+        'position' => 'setPosition'
     ];
 
     /**
@@ -200,9 +190,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
      */
     protected static $getters = [
         'id' => 'getId',
-        'category' => 'getCategory',
-        'products' => 'getProducts',
-        'providers' => 'getProviders'
+        'position' => 'getPosition'
     ];
 
     /**
@@ -263,9 +251,7 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     public function __construct(?array $data = null)
     {
         $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('category', $data ?? [], null);
-        $this->setIfExists('products', $data ?? [], null);
-        $this->setIfExists('providers', $data ?? [], null);
+        $this->setIfExists('position', $data ?? [], null);
     }
 
     /**
@@ -338,82 +324,28 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInner implements ModelInterfac
     }
 
     /**
-     * Gets category
+     * Gets position
      *
-     * @return string|null
+     * @return int|null
      */
-    public function getCategory()
+    public function getPosition()
     {
-        return $this->container['category'];
+        return $this->container['position'];
     }
 
     /**
-     * Sets category
+     * Sets position
      *
-     * @param string|null $category category
+     * @param int|null $position position
      *
      * @return self
      */
-    public function setCategory($category)
+    public function setPosition($position)
     {
-        if (is_null($category)) {
-            throw new \InvalidArgumentException('non-nullable category cannot be null');
+        if (is_null($position)) {
+            throw new \InvalidArgumentException('non-nullable position cannot be null');
         }
-        $this->container['category'] = $category;
-
-        return $this;
-    }
-
-    /**
-     * Gets products
-     *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null
-     */
-    public function getProducts()
-    {
-        return $this->container['products'];
-    }
-
-    /**
-     * Sets products
-     *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner[]|null $products products
-     *
-     * @return self
-     */
-    public function setProducts($products)
-    {
-        if (is_null($products)) {
-            throw new \InvalidArgumentException('non-nullable products cannot be null');
-        }
-        $this->container['products'] = $products;
-
-        return $this;
-    }
-
-    /**
-     * Gets providers
-     *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null
-     */
-    public function getProviders()
-    {
-        return $this->container['providers'];
-    }
-
-    /**
-     * Sets providers
-     *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProvidersInner[]|null $providers providers
-     *
-     * @return self
-     */
-    public function setProviders($providers)
-    {
-        if (is_null($providers)) {
-            throw new \InvalidArgumentException('non-nullable providers cannot be null');
-        }
-        $this->container['providers'] = $providers;
+        $this->container['position'] = $position;
 
         return $this;
     }

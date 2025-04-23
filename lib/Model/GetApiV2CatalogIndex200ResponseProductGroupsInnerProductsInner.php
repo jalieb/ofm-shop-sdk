@@ -58,7 +58,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
       */
     protected static $openAPITypes = [
         'id' => 'string',
-        'price' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice'
+        'price' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice',
+        'providers' => 'string[]',
+        'payout' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]',
+        'duration' => 'string'
     ];
 
     /**
@@ -70,7 +73,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
       */
     protected static $openAPIFormats = [
         'id' => null,
-        'price' => null
+        'price' => null,
+        'providers' => null,
+        'payout' => null,
+        'duration' => null
     ];
 
     /**
@@ -80,7 +86,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
       */
     protected static array $openAPINullables = [
         'id' => false,
-        'price' => false
+        'price' => false,
+        'providers' => false,
+        'payout' => false,
+        'duration' => false
     ];
 
     /**
@@ -170,7 +179,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
      */
     protected static $attributeMap = [
         'id' => 'id',
-        'price' => 'price'
+        'price' => 'price',
+        'providers' => 'providers',
+        'payout' => 'payout',
+        'duration' => 'duration'
     ];
 
     /**
@@ -180,7 +192,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
      */
     protected static $setters = [
         'id' => 'setId',
-        'price' => 'setPrice'
+        'price' => 'setPrice',
+        'providers' => 'setProviders',
+        'payout' => 'setPayout',
+        'duration' => 'setDuration'
     ];
 
     /**
@@ -190,7 +205,10 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
      */
     protected static $getters = [
         'id' => 'getId',
-        'price' => 'getPrice'
+        'price' => 'getPrice',
+        'providers' => 'getProviders',
+        'payout' => 'getPayout',
+        'duration' => 'getDuration'
     ];
 
     /**
@@ -252,6 +270,9 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
     {
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('price', $data ?? [], null);
+        $this->setIfExists('providers', $data ?? [], null);
+        $this->setIfExists('payout', $data ?? [], null);
+        $this->setIfExists('duration', $data ?? [], null);
     }
 
     /**
@@ -346,6 +367,87 @@ class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements 
             throw new \InvalidArgumentException('non-nullable price cannot be null');
         }
         $this->container['price'] = $price;
+
+        return $this;
+    }
+
+    /**
+     * Gets providers
+     *
+     * @return string[]|null
+     */
+    public function getProviders()
+    {
+        return $this->container['providers'];
+    }
+
+    /**
+     * Sets providers
+     *
+     * @param string[]|null $providers providers
+     *
+     * @return self
+     */
+    public function setProviders($providers)
+    {
+        if (is_null($providers)) {
+            throw new \InvalidArgumentException('non-nullable providers cannot be null');
+        }
+        $this->container['providers'] = $providers;
+
+        return $this;
+    }
+
+    /**
+     * Gets payout
+     *
+     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null
+     */
+    public function getPayout()
+    {
+        return $this->container['payout'];
+    }
+
+    /**
+     * Sets payout
+     *
+     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPayoutInner[]|null $payout payout
+     *
+     * @return self
+     */
+    public function setPayout($payout)
+    {
+        if (is_null($payout)) {
+            throw new \InvalidArgumentException('non-nullable payout cannot be null');
+        }
+        $this->container['payout'] = $payout;
+
+        return $this;
+    }
+
+    /**
+     * Gets duration
+     *
+     * @return string|null
+     */
+    public function getDuration()
+    {
+        return $this->container['duration'];
+    }
+
+    /**
+     * Sets duration
+     *
+     * @param string|null $duration duration
+     *
+     * @return self
+     */
+    public function setDuration($duration)
+    {
+        if (is_null($duration)) {
+            throw new \InvalidArgumentException('non-nullable duration cannot be null');
+        }
+        $this->container['duration'] = $duration;
 
         return $this;
     }
