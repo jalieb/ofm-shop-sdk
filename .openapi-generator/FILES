@@ -6,6 +6,9 @@ composer.json
 docs/Api/DefaultApi.md
 docs/Model/GetApiV2CatalogIndex200Response.md
 docs/Model/GetApiV2CatalogIndex200ResponseCustomer.md
+docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInner.md
+docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner.md
+docs/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice.md
 git_push.sh
 lib/Api/DefaultApi.php
 lib/ApiException.php
@@ -13,7 +16,12 @@ lib/Configuration.php
 lib/HeaderSelector.php
 lib/Model/GetApiV2CatalogIndex200Response.php
 lib/Model/GetApiV2CatalogIndex200ResponseCustomer.php
+lib/Model/GetApiV2CatalogIndex200ResponseProductGroupsInner.php
+lib/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner.php
+lib/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice.php
 lib/Model/ModelInterface.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/GetApiV2CatalogIndex200ResponseCustomerTest.php
+test/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPriceTest.php
+test/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerTest.php
+test/Model/GetApiV2CatalogIndex200ResponseProductGroupsInnerTest.php

@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV2CatalogIndex200Response
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \OpenAPI\Client\ObjectSerializer;
 
 /**
- * GetApiV2CatalogIndex200Response Class Doc Comment
+ * GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner Class Doc Comment
  *
  * @category Class
  * @package  OpenAPI\Client
@@ -40,7 +40,7 @@ use \OpenAPI\Client\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInner implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response';
+    protected static $openAPIModelName = 'get_api_v2_catalog_index_200_response_productGroups_inner_products_inner';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'catalog_id' => 'string',
-        'customer' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer',
-        'product_groups' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]'
+        'id' => 'string',
+        'price' => '\OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice'
     ];
 
     /**
@@ -70,9 +69,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'catalog_id' => null,
-        'customer' => null,
-        'product_groups' => null
+        'id' => null,
+        'price' => null
     ];
 
     /**
@@ -81,9 +79,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'catalog_id' => false,
-        'customer' => false,
-        'product_groups' => false
+        'id' => false,
+        'price' => false
     ];
 
     /**
@@ -172,9 +169,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $attributeMap = [
-        'catalog_id' => 'catalogId',
-        'customer' => 'customer',
-        'product_groups' => 'productGroups'
+        'id' => 'id',
+        'price' => 'price'
     ];
 
     /**
@@ -183,9 +179,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'catalog_id' => 'setCatalogId',
-        'customer' => 'setCustomer',
-        'product_groups' => 'setProductGroups'
+        'id' => 'setId',
+        'price' => 'setPrice'
     ];
 
     /**
@@ -194,9 +189,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'catalog_id' => 'getCatalogId',
-        'customer' => 'getCustomer',
-        'product_groups' => 'getProductGroups'
+        'id' => 'getId',
+        'price' => 'getPrice'
     ];
 
     /**
@@ -256,9 +250,8 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('catalog_id', $data ?? [], null);
-        $this->setIfExists('customer', $data ?? [], null);
-        $this->setIfExists('product_groups', $data ?? [], null);
+        $this->setIfExists('id', $data ?? [], null);
+        $this->setIfExists('price', $data ?? [], null);
     }
 
     /**
@@ -304,82 +297,55 @@ class GetApiV2CatalogIndex200Response implements ModelInterface, ArrayAccess, \J
 
 
     /**
-     * Gets catalog_id
+     * Gets id
      *
      * @return string|null
      */
-    public function getCatalogId()
+    public function getId()
     {
-        return $this->container['catalog_id'];
+        return $this->container['id'];
     }
 
     /**
-     * Sets catalog_id
+     * Sets id
      *
-     * @param string|null $catalog_id catalog_id
+     * @param string|null $id id
      *
      * @return self
      */
-    public function setCatalogId($catalog_id)
+    public function setId($id)
     {
-        if (is_null($catalog_id)) {
-            throw new \InvalidArgumentException('non-nullable catalog_id cannot be null');
+        if (is_null($id)) {
+            throw new \InvalidArgumentException('non-nullable id cannot be null');
         }
-        $this->container['catalog_id'] = $catalog_id;
+        $this->container['id'] = $id;
 
         return $this;
     }
 
     /**
-     * Gets customer
+     * Gets price
      *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null
+     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null
      */
-    public function getCustomer()
+    public function getPrice()
     {
-        return $this->container['customer'];
+        return $this->container['price'];
     }
 
     /**
-     * Sets customer
+     * Sets price
      *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseCustomer|null $customer customer
+     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInnerProductsInnerPrice|null $price price
      *
      * @return self
      */
-    public function setCustomer($customer)
+    public function setPrice($price)
     {
-        if (is_null($customer)) {
-            throw new \InvalidArgumentException('non-nullable customer cannot be null');
+        if (is_null($price)) {
+            throw new \InvalidArgumentException('non-nullable price cannot be null');
         }
-        $this->container['customer'] = $customer;
-
-        return $this;
-    }
-
-    /**
-     * Gets product_groups
-     *
-     * @return \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null
-     */
-    public function getProductGroups()
-    {
-        return $this->container['product_groups'];
-    }
-
-    /**
-     * Sets product_groups
-     *
-     * @param \OpenAPI\Client\Model\GetApiV2CatalogIndex200ResponseProductGroupsInner[]|null $product_groups product_groups
-     *
-     * @return self
-     */
-    public function setProductGroups($product_groups)
-    {
-        if (is_null($product_groups)) {
-            throw new \InvalidArgumentException('non-nullable product_groups cannot be null');
-        }
-        $this->container['product_groups'] = $product_groups;
+        $this->container['price'] = $price;
 
         return $this;
     }
